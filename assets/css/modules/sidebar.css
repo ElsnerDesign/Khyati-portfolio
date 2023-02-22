@@ -1,0 +1,69 @@
+aside.sidebar {
+    background: var(--secondary--200);
+    border-radius: .75rem;
+    height: calc(100vh - 6.125rem);
+    padding: 1rem 1.125rem;
+}
+
+.sidebar-wrapper ul {
+    list-style: none;
+}
+
+li.has-submenu.level1>a::before {
+    content: "";
+    background: url(../../images/arrow.svg) no-repeat;
+    width: 11px;
+    height: 7px;
+    display: inline-block;
+    margin-right: 11px;
+    transform: rotate(-90deg);
+}
+
+li.has-submenu>a::before {
+    content: "";
+    background: url(../../images/arrow.svg) no-repeat;
+    width: 11px;
+    height: 7px;
+    display: inline-block;
+    margin-right: 14px;
+    transform: rotate(-90deg);
+    transition: all 0.2s linear;
+}
+
+.sidebar-wrapper ul>li>a.active::before {
+    transform: rotate(0deg);
+}
+
+.sidebar-wrapper ul li {
+    padding-left: 22px;
+}
+
+.sidebar-wrapper ul li a {
+    font-family: var(--roboto-font);
+    position: relative;
+    color: var(--secondary--900);
+    font-size: var(--font-15);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+li.parent-submenu>a {
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-14);
+    text-transform: uppercase;
+}
+
+.sidebar-wrapper ul li a img {
+    margin-right: 9px;
+}
+
+.sidebar-wrapper ul li.has-submenu.level1 {
+    padding: 0;
+}
+
+.sidebar-wrapper ul li.has-submenu.level1>a {
+    text-transform: uppercase;
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-14);
+}

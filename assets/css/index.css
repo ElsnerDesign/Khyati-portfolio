@@ -1,0 +1,150 @@
+.markup.head {
+    padding-bottom: 1.25rem;
+}
+
+.markup p {
+    color: var(--secondary--900A);
+    font-family: var(--ibm-font);
+    font-size: var(--font-13);
+    padding-bottom: 6px;
+}
+
+.markup p span {
+    color: var(--secondary--700);
+}
+
+.markup p span.blue {
+    color: var(--tag-color);
+}
+
+.markup ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.markup ul ul li {
+    padding-left: 1.125rem;
+}
+
+.banner-description {
+    max-width: 680px;
+}
+
+.banner-description .desc {
+    font-size: var(--h6-font);
+    font-family: var(--sora-font);
+    line-height: 1.5;
+    font-weight: var(--font-weight-400);
+}
+
+
+.cursor {
+    position: absolute;
+    width: 31.25rem;
+    height: 43.75rem;
+    top: 50%;
+    left: 50%;
+    transform: scale(0.1);
+    transform-origin: top left;
+    opacity: 0;
+    margin: -6.25rem 0 0 -6.25rem;
+    background: url(image-1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    z-index: 1;
+    transition: all 0.15s linear;
+    background-size: contain;
+}
+
+.cursor-tech {
+    position: absolute;
+    width: 12.5rem;
+    height: 12.5rem;
+    top: 50%;
+    left: 50%;
+    transform: scale(0.1);
+    transform-origin: top left;
+    opacity: 0;
+    margin: -5rem 0 0 -5rem;
+    background: url(image-1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    z-index: 1;
+    transition: all 0.15s linear;
+    background-size: contain;
+}
+
+.project {
+    position: relative;
+    z-index: 2;
+    /* mix-blend-mode: difference; */
+    max-width: 87%;
+}
+
+.project-overlay,
+.tech-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.project-slider {
+    position: relative;
+    margin: 8px 0 10px;
+}
+
+.project-slider .item {
+    position: relative;
+    line-height: 0;
+}
+
+.project-slider .item img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 31.25rem;
+}
+
+.project-slider .item .project-desc {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(24px);
+    height: 100%;
+    max-width: 25%;
+    line-height: 1.7;
+    display: flex;
+    align-items: flex-end;
+    padding: 2.5rem;
+    font-family: var(--ibm-font);
+    font-style: normal;
+    font-weight: var(--font-weight-600);
+    z-index: 1;
+}
+
+.technology-wrapper {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.tech-name {
+    position: relative;
+    z-index: 2;
+    min-width: 30%;
+}
+
+.tech-name P {
+    font-size: var(--h2-font);
+    font-weight: var(--font-weight-bold);
+    font-family: var(--sora-font);
+    margin: 0;
+}
+
+.tech-name:hover p {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--primary--900A);
+    color: transparent;
+}

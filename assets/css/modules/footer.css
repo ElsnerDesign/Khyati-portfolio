@@ -1,0 +1,52 @@
+.footer {
+    background: var(--tertiary--300);
+    border-radius: .375rem;
+    padding: .5rem 1.25rem;
+    font-size: var(--font-14);
+    color: var(--white-color);
+    margin: 0 1.25rem 1.25rem;
+    font-family: var(--roboto-font);
+}
+
+.scroll-top {
+    position: fixed;
+    right: 5rem;
+    bottom: 8.75rem;
+}
+
+.scroll-top a {
+    color: var(--primary--400);
+    font-size: var(--font-16);
+    font-family: var(--ibm-font);
+    font-weight: var(--font-weight-600);
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.scroll-top a svg {
+    -webkit-animation: mover 0.8s infinite alternate linear;
+    animation: mover 0.8s infinite alternate linear;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-8px);
+    }
+}
